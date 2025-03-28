@@ -44,6 +44,8 @@ const cleanExpiredCache = () => {
 // Run cache cleanup every 5 minutes
 setInterval(cleanExpiredCache, 5 * 60 * 1000);
 
+const blacklist = ["ezdekauti8338.xml","dongoautis333.xml","sigmabangget.xml","mangeak9449.xml","netrohtf99.xml","gtps777.xml","gtp2929.xml","gtps3333.xml"];
+
 // setting the route
 router.get("/:ip/cache/*", async (req, res, next) => {
     // check if ip is an ip
